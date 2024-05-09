@@ -30,3 +30,4 @@ C:\Users\ruppin\Desktop\ENG_2023-2024_SERVER\Lec01 07_05_2024 WEP API FUND\WebAp
 C:\Users\ruppin\Desktop\ENG_2023-2024_SERVER\Lec01 07_05_2024 WEP API FUND\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\ruppin\Desktop\ENG_2023-2024_SERVER\Lec01 07_05_2024 WEP API FUND\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\ruppin\Desktop\ENG_2023-2024_SERVER\Lec01 07_05_2024 WEP API FUND\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\ruppin\Desktop\ENG_2023-2024_SERVER\Lec01 07_05_2024 WEP API FUND\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json

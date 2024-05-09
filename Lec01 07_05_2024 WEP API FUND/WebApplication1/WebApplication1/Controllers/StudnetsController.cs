@@ -14,5 +14,21 @@ namespace WebApplication1.Controllers
             Student[] sts = StudentsDBMock.students.ToArray();
             return sts;
         }
+
+        [HttpGet("{id}")]
+        public Student Get(int id)
+        {
+            return StudentsDBMock.students.FirstOrDefault(stu => stu.ID == id);
+        }
+
+        [HttpPost]
+        public int Post([FromBody] Student value)
+        {
+            
+            int max = StudentsDBMock.students.Max(stu=> stu.ID);
+            value.ID = max+1;
+            StudentsDBMock.students.Add(value);
+            return value.ID;
+        }
     }
 }
