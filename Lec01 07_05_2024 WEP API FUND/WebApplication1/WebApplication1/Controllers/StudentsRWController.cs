@@ -4,6 +4,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class StudentsRWController : ControllerBase
@@ -235,6 +236,29 @@ namespace WebApplication1.Controllers
         }
 
 
+        [HttpPost("login")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Student))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Login([FromBody] LoginData ld)
+        {
+            try
+            {
+                Student stu = DBServices.Login(ld.Name, ld.Pass);
+                if (stu != null)
+                {
+                    return Ok(stu);
+                }
+                else
+                {
+                    return NotFound($"stu with name = {ld.Name} and pass not found! ");
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
 
 
 
